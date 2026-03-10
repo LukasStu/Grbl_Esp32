@@ -3,14 +3,21 @@
 // Grbl setting that are common to all machines
 // It should not be necessary to change anything herein
 
-#ifndef GRBL_SPI_FREQ
 // You can override these by defining them in a board file.
-// To override, you must set all of them
-//-1 means use the default board pin
+// -1 means use the default board pin.
+#ifndef GRBL_SPI_SS
 #    define GRBL_SPI_SS -1
+#endif
+#ifndef GRBL_SPI_MOSI
 #    define GRBL_SPI_MOSI -1
+#endif
+#ifndef GRBL_SPI_MISO
 #    define GRBL_SPI_MISO -1
+#endif
+#ifndef GRBL_SPI_SCK
 #    define GRBL_SPI_SCK -1
+#endif
+#ifndef GRBL_SPI_FREQ
 #    define GRBL_SPI_FREQ 4000000
 #endif
 
